@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-12">
+    <label for="upload-file">Upload File:</label>
+    <div class="btn btn-file btn-primary-outline m-l">
+      Choose {{text-file-upload action='processX12File' elementId='text-file-upload'}}
+    </div>
+
+    {{outlet}}
+  </div>
+  <div class="col-md-4 m-y">
+    <div class="statcard statcard-{{unless model.length 'default' 'success'}} p-a-md m-b">
+      <h3 class="statcard-number">
+        {{model.length}}
+      </h3>
+      <span class="statcard-desc">Coverages</span>
+    </div>
+  </div>
+  {{#if model.length}}
+  <div class="col-md-12">
+    <table class="table table-responsive">
+      <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Client ID</th>
+        <th>Dependent</th>
+        <!--<th>Group Number</th>-->
+        <th>Primary Phone</th>
+        <th>Email</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <!--<th>SSN</th>-->
+      </tr>
+      </thead>
+      <tbody>
+      {{#each model as |coverage|}}
+        <tr>
+          <td>{{coverage.firstName}}</td>
+          <td>{{coverage.lastName}}</td>
+          <td>{{coverage.clientIdForMember}}</td>
+          <td class="p-l-md">
+            {{#if coverage.dependent}}
+              <span class="icon icon-check"></span>
+            {{/if}}
+          </td>
+          <!--<td>{{coverage.groupNumber}}</td>-->
+          <td>{{coverage.primaryPhone}}</td>
+          <td>{{coverage.email}}</td>
+          <td>{{coverage.address1}}</td>
+          <td>{{coverage.address2}}</td>
+          <!--<td>{{coverage.ssn}}</td>-->
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{/if}}
+</div>

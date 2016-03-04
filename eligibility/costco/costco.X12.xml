@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x12simple>
+  <loop id='ISA_LOOP'>
+    <seg id='ISA'>
+      <ele id='ISA01'>00</ele>
+      <ele id='ISA02'>          </ele>
+      <ele id='ISA03'>00</ele>
+      <ele id='ISA04'>          </ele>
+      <ele id='ISA05'>30</ele>
+      <ele id='ISA06'>911223280      </ele>
+      <ele id='ISA07'>30</ele>
+      <ele id='ISA08'>45-2355015     </ele>
+      <ele id='ISA09'>141130</ele>
+      <ele id='ISA10'>1500</ele>
+      <ele id='ISA11'>^</ele>
+      <ele id='ISA12'>00501</ele>
+      <ele id='ISA13'>000000007</ele>
+      <ele id='ISA14'>0</ele>
+      <ele id='ISA15'>P</ele>
+      <ele id='ISA16'>:</ele>
+    </seg>
+    <loop id='GS_LOOP'>
+      <seg id='GS'>
+        <ele id='GS01'>BE</ele>
+        <ele id='GS02'>911223280</ele>
+        <ele id='GS03'>45-2355015</ele>
+        <ele id='GS04'>20141130</ele>
+        <ele id='GS05'>1500</ele>
+        <ele id='GS06'>1</ele>
+        <ele id='GS07'>X</ele>
+        <ele id='GS08'>005010X220A1</ele>
+      </seg>
+      <loop id='ST_LOOP'>
+        <seg id='ST'>
+          <ele id='ST01'>834</ele>
+          <ele id='ST02'>0001</ele>
+          <ele id='ST03'>005010X220A1</ele>
+        </seg>
+        <loop id='HEADER'>
+          <seg id='BGN'>
+            <ele id='BGN01'>00</ele>
+            <ele id='BGN02'>20141130150008</ele>
+            <ele id='BGN03'>20141130</ele>
+            <ele id='BGN04'>1500</ele>
+            <ele id='BGN08'>4</ele>
+          </seg>
+          <seg id='DTP'>
+            <ele id='DTP01'>090</ele>
+            <ele id='DTP02'>D8</ele>
+            <ele id='DTP03'>20141214</ele>
+          </seg>
+          <loop id='1000A'>
+            <seg id='N1'>
+              <ele id='N101'>P5</ele>
+              <ele id='N102'>COSTCO</ele>
+              <ele id='N103'>FI</ele>
+              <ele id='N104'>911223280</ele>
+            </seg>
+          </loop>
+          <loop id='1000B'>
+            <seg id='N1'>
+              <ele id='N101'>IN</ele>
+              <ele id='N102'>OMADA</ele>
+              <ele id='N103'>FI</ele>
+              <ele id='N104'>45-2355015</ele>
+            </seg>
+          </loop>
+          <loop id='1000C'>
+            <seg id='N1'>
+              <ele id='N101'>TV</ele>
+              <ele id='N102'>ALIQUANT</ele>
+              <ele id='N103'>FI</ele>
+              <ele id='N104'>999999999</ele>
+            </seg>
+          </loop>
+        </loop>
+        <loop id='DETAIL'>
+          <loop id='2000'>
+            <seg id='INS'>
+              <ele id='INS01'>Y</ele>
+              <ele id='INS02'>18</ele>
+              <ele id='INS03'>030</ele>
+              <ele id='INS04'>XN</ele>
+              <ele id='INS05'>A</ele>
+              <ele id='INS08'>FT</ele>
+            </seg>
+            <seg id='REF'>
+              <ele id='REF01'>0F</ele>
+              <ele id='REF02'>111111111</ele>
+            </seg>
+            <loop id='2100A'>
+              <seg id='NM1'>
+                <ele id='NM101'>IL</ele>
+                <ele id='NM102'>1</ele>
+                <ele id='NM103'>PARKER</ele>
+                <ele id='NM104'>TONY</ele>
+                <ele id='NM108'>34</ele>
+                <ele id='NM109'>11111111A</ele>
+              </seg>
+              <seg id='PER'>
+                <ele id='PER01'>IP</ele>
+                <ele id='PER03'>TE</ele>
+                <ele id='PER04'>1111111111</ele>
+                <ele id='PER05'>EM</ele>
+                <ele id='PER06'>tonyparker@example.com</ele>
+              </seg>
+              <seg id='N3'>
+                <ele id='N301'>900 EVA ST</ele>
+              </seg>
+              <seg id='N4'>
+                <ele id='N401'>SAN ANTONIO</ele>
+                <ele id='N402'>TX</ele>
+                <ele id='N403'>77777</ele>
+                <ele id='N405'>60</ele>
+                <ele id='N406'>SW</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>D8</ele>
+                <ele id='DMG02'>19700111</ele>
+                <ele id='DMG03'>M</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>LU</ele>
+                <ele id='DMG02'>00123</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>3L</ele>
+                <ele id='DMG02'>HQ</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>9X</ele>
+                <ele id='DMG02'>00001111</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>PID</ele>
+                <ele id='DMG02'>123</ele>
+              </seg>
+            </loop>
+          </loop>
+          <loop id='2000'>
+            <seg id='INS'>
+              <ele id='INS01'>N</ele>
+              <ele id='INS02'>18</ele>
+              <ele id='INS03'>030</ele>
+              <ele id='INS04'>XN</ele>
+              <ele id='INS05'>A</ele>
+              <ele id='INS08'>PT</ele>
+            </seg>
+            <seg id='REF'>
+              <ele id='REF01'>0F</ele>
+              <ele id='REF02'>895549060</ele>
+            </seg>
+            <loop id='2100A'>
+              <seg id='NM1'>
+                <ele id='NM101'>IL</ele>
+                <ele id='NM102'>1</ele>
+                <ele id='NM103'>GINOBLI</ele>
+                <ele id='NM104'>MANU</ele>
+                <ele id='NM108'>34</ele>
+                <ele id='NM109'>22222222A</ele>
+              </seg>
+              <seg id='PER'>
+                <ele id='PER01'>IP</ele>
+                <ele id='PER03'>TE</ele>
+                <ele id='PER04'>2222222222</ele>
+              </seg>
+              <seg id='N3'>
+                <ele id='N301'>123 ARGENTINA DR</ele>
+              </seg>
+              <seg id='N4'>
+                <ele id='N401'>SAN ANTONIO</ele>
+                <ele id='N402'>TX</ele>
+                <ele id='N403'>77777</ele>
+                <ele id='N405'>60</ele>
+                <ele id='N406'>SE</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>D8</ele>
+                <ele id='DMG02'>19901011</ele>
+                <ele id='DMG03'>M</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>LU</ele>
+                <ele id='DMG02'>00321</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>3L</ele>
+                <ele id='DMG02'>HQ</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>9X</ele>
+                <ele id='DMG02'>00002222</ele>
+              </seg>
+              <seg id='DMG'>
+                <ele id='DMG01'>PID</ele>
+                <ele id='DMG02'>321</ele>
+              </seg>
+            </loop>
+          </loop>
+        </loop>
+        <seg id='SE'>
+          <ele id='SE01'>29</ele>
+          <ele id='SE02'>0001</ele>
+        </seg>
+      </loop>
+      <seg id='GE'>
+        <ele id='GE01'>1</ele>
+        <ele id='GE02'>1</ele>
+      </seg>
+    </loop>
+    <seg id='IEA'>
+      <ele id='IEA01'>1</ele>
+      <ele id='IEA02'>000000007</ele>
+    </seg>
+  </loop>
+</x12simple>
